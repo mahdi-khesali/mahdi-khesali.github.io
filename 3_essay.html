@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay - Mahdi Khesali</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: left; 
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            height: calc(100vh - 60px); /* Adjusting height to fit below nav */
+        }
+        .content-sections {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            height: calc(100vh - 60px); /* Adjusting height to fit below nav */
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .essay-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .essay-item {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .essay-title {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            cursor: pointer;
+        }
+        .essay-summary {
+            font-size: 16px;
+        }
+        .essay-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .filters {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">About Me</a>
+        <a href="1_papers.html">Papers</a>
+        <a href="2_codeData.html">Codes and Data</a>
+        <a href="3_essay.html">Essay</a>
+        <a href="4_slides.html">Slides</a>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Filter</h2>
+            <div class="filters">
+                <label for="languageFilter">Language:</label>
+                <select id="languageFilter" onchange="filterEssays()">
+                    <option value="">All</option>
+                    <option value="English">English</option>
+                    <option value="German">Farsi</option>
+                    <!-- Add more languages as needed -->
+                </select>
+                <br><br>
+                <label for="topicFilter">Topic:</label>
+                <select id="topicFilter" onchange="filterEssays()">
+                    <option value="">All</option>
+                    <option value="Law">Political Economy</option>
+                    <option value="Economics">Development Economics</option>
+                    <option value="Economics">Public Finance</option>
+                    <option value="Economics">Experimental Law and Economics</option>
+                    <option value="Economics">Empirical Legal Studies</option>
+                    
+                </select>
+            </div>
+        </div>
+        <!-- Add more topics as needed 
+        <div class="content-sections">
+            <ul class="essay-list" id="mainEssayList">
+                <li class="essay-item" data-language="English" data-topic="Law">
+                    <div class="essay-title" onclick="toggleEssay(this)">Essay Title 1</div>
+                    <div class="essay-summary">This is a summary of the first essay. It provides an overview of the main points and arguments made in the essay.</div>
+                    <div class="essay-content">
+                        <p>This is the full text of the first essay. It includes all the details and arguments that were summarized above.</p>
+                    </div>
+                </li>
+                <li class="essay-item" data-language="German" data-topic="Economics">
+                    <div class="essay-title" onclick="toggleEssay(this)">Essay Title 2</div>
+                    <div class="essay-summary">This is a summary of the second essay. It provides an overview of the main points and arguments made in the essay.</div>
+                    <div class="essay-content">
+                        <p>This is the full text of the second essay. It includes all the details and arguments that were summarized above.</p>
+                    </div>
+                </li>
+                <li class="essay-item" data-language="English" data-topic="Economics">
+                    <div class="essay-title" onclick="toggleEssay(this)">Essay Title 3</div>
+                    <div class="essay-summary">This is a summary of the third essay. It provides an overview of the main points and arguments made in the essay.</div>
+                    <div class="essay-content">
+                        <p>This is the full text of the third essay. It includes all the details and arguments that were summarized above.</p>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+    <script src="js/essays.js"></script>
+</body>
+</html>

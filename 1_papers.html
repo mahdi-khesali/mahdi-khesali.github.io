@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papers - Mahdi Khesali</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content-sections {
+            flex: 1;
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .paper {
+            background-color: #fff;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .additional-info {
+            display: block;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">About Me</a>
+        <a href="1_papers.html">Papers</a>
+        <a href="2_codeData.html">Codes and Data</a>
+        <a href="3_essay.html">Essay</a>
+        <a href="4_slides.html">Slides</a>
+    </nav>
+
+    <div class="content-sections">
+        <label for="categorySelect"><h3>Please Select:</h3></label>
+        <select id="categorySelect">
+            <option value="">-- Select a Category --</option>
+            <option value="field" selected>Field</option>
+            <option value="method">Method</option>
+            <option value="stage">Stage</option>
+        </select>
+
+        <div id="papersList"></div>
+    </div>
+
+    <script src="js/papers.js"></script>
+</body>
+</html>
