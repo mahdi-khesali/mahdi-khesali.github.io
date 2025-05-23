@@ -26,11 +26,11 @@ function applyFilter() {
             "coauthors": ["Jerg Gutmann", "Stefan Voigt"]
         }, 
         {
-            "name": "Doing It Right, Doing It Wrong: The Effect of Expressive Voting",
+            "name": "The Democracy Premium in Expressive Law: An Experiment",
             "field": "Political Economy and Public Choice",
             "method": "Experimental",
-            "stage": "Work in Progress",
-            "url": "",
+            "stage": "Working Paper",
+            "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253870",
             "coauthors": ["Yoan Hermstrüwer"]
         }],
         "Cultural Economics": [{
@@ -95,11 +95,11 @@ function applyFilter() {
             }
         ],
         "Experimental": [{
-            "name": "Doing It Right, Doing It Wrong: The Effect of Expressive Voting",
+            "name": "The Democracy Premium in Expressive Law: An Experiment",
             "field": "Political Economy and Public Choice",
             "method": "Experimental",
-            "stage": "Work in Progress",
-            "url": "",
+            "stage": "Working Paper",
+            "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253870",
             "coauthors": ["Yoan Hermstrüwer"]
         }, 
         {
@@ -123,14 +123,6 @@ function applyFilter() {
                 "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
             }, 
             {
-                "name": "Doing It Right, Doing It Wrong: The Effect of Expressive Voting",
-                "field": "Political Economy and Public Choice",
-                "method": "Experimental",
-                "stage": "Work in Progress",
-                "url": "",
-                "coauthors": ["Yoan Hermstrüwer"]
-            }, 
-            {
                 "name": "Terms of Contract as Mirror of Your Image",
                 "field": "Contract Theory",
                 "method": "Experimental",
@@ -147,6 +139,14 @@ function applyFilter() {
                 "stage": "Working Paper",
                 "url": "",
                 "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
+            },
+            {
+                "name": "The Democracy Premium in Expressive Law: An Experiment",
+                "field": "Political Economy and Public Choice",
+                "method": "Experimental",
+                "stage": "Work in Progress",
+                "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253870",
+                "coauthors": ["Yoan Hermstrüwer"]
             }
         ],
         "Published": [
@@ -206,7 +206,7 @@ function renderPapers(data) {
             // Append co-authors if they exist
             if (paper.coauthors && paper.coauthors.length > 0) {
                 let coauthorsText = document.createElement('span');
-                coauthorsText.innerText = ` (Co-authors: ${paper.coauthors.join(', ')})`;
+                coauthorsText.innerText = ` (co-authors: ${paper.coauthors.join(', ')})`;
                 paperDiv.appendChild(coauthorsText);
             }
 
