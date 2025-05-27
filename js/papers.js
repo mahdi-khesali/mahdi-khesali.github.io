@@ -41,11 +41,29 @@ function applyFilter() {
             "url": "",
             "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
         },
+        ,
         {
             "name": "Once Upon Time: Introducing the Historical Values Survey",
             "field": "Cultural Economics",
             "method": "Empirical (Observational-Text As Data)",
             "stage": "Working Paper",
+            "url": "",
+            "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
+        }
+        ,
+        {
+            "name": "Culture Matters: On the Distal Determinants of the Rule of Law",
+            "field": "Cultural Economics",
+            "method": "Empirical (Observational-Text As Data)",
+            "stage": "Work in Progress",
+            "url": "",
+            "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
+        },
+        {
+            "name": "Explaining the Change of Fundamental Values and Norms",
+            "field": "Cultural Economics",
+            "method": "Empirical (Observational-Text As Data)",
+            "stage": "Work in Progress",
             "url": "",
             "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
         }], 
@@ -60,13 +78,33 @@ function applyFilter() {
     };
 
     let dataByMethod = {
-        "Observational": [{
+        "Observational": [
+            {
             "name": "Unconstitutional State of Emergency",
             "field": "Political Economy and Public Choice",
             "method": "Empirical (Observational)",
             "stage": "Published",
             "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/718681?journalCode=jls",
-            "coauthors": ["Christian Bjørnskov", "Stefan Voigt"]}
+            "coauthors": ["Christian Bjørnskov", "Stefan Voigt"]
+            }
+            ,
+            {
+            "name": "Culture Matters: On the Distal Determinants of the Rule of Law",
+            "field": "Cultural Economics",
+            "method": "Empirical (Observational-Text As Data)",
+            "stage": "Work in Progress",
+            "url": "",
+            "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
+            }
+            ,
+            {
+                "name": "Explaining the Change of Fundamental Values and Norms",
+                "field": "Cultural Economics",
+                "method": "Empirical (Observational-Text As Data)",
+                "stage": "Work in Progress",
+                "url": "",
+                "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
+            }
         ],
         "Observational (Text As Data)": [
             {
@@ -129,6 +167,24 @@ function applyFilter() {
                 "stage": "Work in Progress",
                 "url": "",
                 "coauthors": ["Monika Leszczynska", "Jana Friedrichsen"]
+            }
+            ,
+            {
+            "name": "Culture Matters: On the Distal Determinants of the Rule of Law",
+            "field": "Cultural Economics",
+            "method": "Empirical (Observational-Text As Data)",
+            "stage": "Work in Progress",
+            "url": "",
+            "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
+            }
+            ,
+            {
+                "name": "Explaining the Change of Fundamental Values and Norms",
+                "field": "Cultural Economics",
+                "method": "Empirical (Observational-Text As Data)",
+                "stage": "Work in Progress",
+                "url": "",
+                "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
             }
         ],
         "Working Paper":[
