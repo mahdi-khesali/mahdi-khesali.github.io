@@ -9,9 +9,9 @@ document.getElementById('categorySelect').addEventListener('change', function() 
 function applyFilter() {
     // Mock data for the papers based on different categories
     let dataByField = {
-        "Political Economy and Public Choice": [{
+        "Political Economy": [{
             "name": "Unconstitutional State of Emergency",
-            "field": "Political Economy and Public Choice",
+            "field": "Political Economy",
             "method": "Observational",
             "stage": "Published",
             "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/718681?journalCode=jls",
@@ -19,7 +19,7 @@ function applyFilter() {
         }, 
         {
             "name": "Constitutional Comprehensibility and the Coordination of Citizens: A Test of the Weingast-Hypothesis Emergency",
-            "field": "Political Economy and Public Choice",
+            "field": "Political Economy",
             "method": "Observational (Text As Data)",
             "stage": "Published",
             "url": "https://lawreviewblog.uchicago.edu/2021/04/05/cv-gutmann-khesali-voigt",
@@ -27,7 +27,7 @@ function applyFilter() {
         }, 
         {
             "name": "The Democracy Premium in Expressive Law: An Experiment",
-            "field": "Political Economy and Public Choice",
+            "field": "Political Economy",
             "method": "Experimental",
             "stage": "Working Paper",
             "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253870",
@@ -66,22 +66,14 @@ function applyFilter() {
             "stage": "Work in Progress",
             "url": "",
             "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
-        }], 
-        "Contract Theory": [{
-            "name": "Terms of Contract as Mirror of Your Image",
-            "field": "Contract Theory",
-            "method": "Experimental",
-            "stage": "Work in Progress",
-            "url": "",
-            "coauthors": ["Monika Leszczynska", "Jana Friedrichsen"]
-        }]
+        }],
     };
 
     let dataByMethod = {
         "Observational": [
             {
             "name": "Unconstitutional State of Emergency",
-            "field": "Political Economy and Public Choice",
+            "field": "Political Economy",
             "method": "Empirical (Observational)",
             "stage": "Published",
             "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/718681?journalCode=jls",
@@ -109,7 +101,7 @@ function applyFilter() {
         "Observational (Text As Data)": [
             {
                 "name": "Constitutional Comprehensibility and the Coordination of Citizens: A Test of the Weingast-Hypothesis Emergency",
-                "field": "Political Economy and Public Choice",
+                "field": "Political Economy",
                 "method": "Observational (Text As Data)",
                 "stage": "Published",
                 "url": "https://lawreviewblog.uchicago.edu/2021/04/05/cv-gutmann-khesali-voigt",
@@ -134,19 +126,11 @@ function applyFilter() {
         ],
         "Experimental": [{
             "name": "The Democracy Premium in Expressive Law: An Experiment",
-            "field": "Political Economy and Public Choice",
+            "field": "Political Economy",
             "method": "Experimental",
             "stage": "Working Paper",
             "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253870",
             "coauthors": ["Yoan Hermstrüwer"]
-        }, 
-        {
-            "name": "Terms of Contract as Mirror of Your Image",
-            "field": "Contract Theory",
-            "method": "Experimental",
-            "stage": "Work in Progress",
-            "url": "",
-            "coauthors": ["Monika Leszczynska", "Jana Friedrichsen"]
         }]
     };
 
@@ -159,16 +143,7 @@ function applyFilter() {
                 "stage": "Work in Progress",
                 "url": "",
                 "coauthors": ["Stefan Voigt", "Nadia von Jacobi"]
-            }, 
-            {
-                "name": "Terms of Contract as Mirror of Your Image",
-                "field": "Contract Theory",
-                "method": "Experimental",
-                "stage": "Work in Progress",
-                "url": "",
-                "coauthors": ["Monika Leszczynska", "Jana Friedrichsen"]
-            }
-            ,
+            },
             {
             "name": "Culture Matters: On the Distal Determinants of the Rule of Law",
             "field": "Cultural Economics",
@@ -198,7 +173,7 @@ function applyFilter() {
             },
             {
                 "name": "The Democracy Premium in Expressive Law: An Experiment",
-                "field": "Political Economy and Public Choice",
+                "field": "Political Economy",
                 "method": "Experimental",
                 "stage": "Work in Progress",
                 "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253870",
@@ -208,7 +183,7 @@ function applyFilter() {
         "Published": [
             {
                 "name": "Unconstitutional State of Emergency",
-                "field": "Political Economy and Public Choice",
+                "field": "Political Economy",
                 "method": "Empirical (Observational)",
                 "stage": "Published",
                 "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/718681?journalCode=jls",
@@ -216,7 +191,7 @@ function applyFilter() {
             },
             {
                 "name": "Constitutional Comprehensibility and the Coordination of Citizens: A Test of the Weingast-Hypothesis Emergency",
-                "field": "Political Economy and Public Choice",
+                "field": "Political Economy",
                 "method": "Observational (Text As Data)",
                 "stage": "Published",
                 "url": "https://lawreviewblog.uchicago.edu/2021/04/05/cv-gutmann-khesali-voigt",
